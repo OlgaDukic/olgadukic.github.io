@@ -1,93 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olga Dukić - Edukacija za budućnost</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Olga Dukić | Obrazovanje, istraživanje i inovacije</title>
+  <meta name="description" content="Olga Dukić — istraživačica, edukatorka i osnivačica koja povezuje obrazovanje, veštačku inteligenciju i inovacije.">
+  <meta property="og:title" content="Olga Dukić">
+  <meta property="og:description" content="Obrazovanje · Istraživanje · Inovacije">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navigacija -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Olga Dukić</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Početna</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">O meni</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Usluge</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Galerija</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Jezik</a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="index.html">🇷🇸 Српски</a></li>
-            <li><a class="dropdown-item" href="index-en.html">🇬🇧 English</a></li>
-          </ul>
-        </li>
-      </ul>
+  <nav class="nav-shell" aria-label="Glavna navigacija">
+    <a class="wordmark" href="#top">OLGA <span>DUKIĆ</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-label="Otvori meni">☰</button>
+    <div class="nav-links">
+      <a href="#o-meni">O meni</a><a href="#projekti">Projekti</a><a href="#istrazivanja">Istraživanja</a><a href="#saradnja">Saradnja</a>
+      <a class="language" href="index-en.html" aria-label="English version">EN</a>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Hero секција -->
-<header class="text-center py-5">
-  <div class="container">
-    <h1 class="display-4">Dobrodošli u obrazovanje za budućnost</h1>
-    <p class="lead mt-3">Zajedno gradimo znanje, svest i inspiraciju za novo doba.</p>
-    <a href="about.html" class="btn btn-primary mt-3">Saznajte više</a>
-  </div>
-</header>
-
-<!-- Основна секција -->
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Ko sam ja i zašto živim obrazovanje?</h2>
-        <p>Moje ime je Olga Dukić. Moj svet su znanje, učenici i radost podučavanja.
-          Već godinama radim sa decom i mladima i nijedan dan u učionici mi nije isti — jer svaki učenik je priča za sebe.
-          Obrazovanje za mene nije posao, već način života i najlepši oblik deljenja onoga što jesam.
-          
-          Verujem da pravo obrazovanje ne samo da prenosi informacije, već budi radoznalost, razvija kritičko mišljenje i osnažuje ljude da postanu najbolja verzija sebe.
-          Zato u svoj rad ugrađujem i ono što donosi novo doba — veštačku inteligenciju kao alat, a ne pretnju.
-          Moja misija je da AI približim deci, nastavnicima i roditeljima — jasno, odgovorno i sa svrhom.</p>
-        <a href="about.html" class="btn btn-outline-primary">Više o meni</a>
-      </div>
-      <div class="col-md-6">
-        <img src="slike/profilna Olga.png" alt="Obrazovanje budućnosti" class="img-fluid rounded">
-      </div>
+  <header id="top" class="hero">
+    <div class="hero-copy">
+      <p class="kicker">OBRAZOVANJE · ISTRAŽIVANJE · INOVACIJE</p>
+      <h1>Znanje koje povezuje<br><em>ljude, ideje i budućnost.</em></h1>
+      <p class="hero-intro">Ja sam Olga Dukić — istraživačica, edukatorka i osnivačica obrazovnih inicijativa koje spajaju nauku, tehnologiju i odgovorno učenje.</p>
+      <div class="hero-actions"><a class="button primary" href="#projekti">Pogledajte projekte</a><a class="button ghost" href="#kontakt">Predložite saradnju</a></div>
+      <p class="role">Dipl. inž. mehatronike · Master fizičar · Doktorand informacionih tehnologija</p>
     </div>
-  </div>
-</section>
+    <div class="portrait-wrap"><div class="portrait-frame"><img src="olga-dukic.jpg" alt="Olga Dukić"></div><span class="vertical-note">ČAČAK · SERBIA</span></div>
+  </header>
 
-  <!-- Mentora Section -->
-<section id="mentora" style="padding: 40px; background-color: #f0f4f8; text-align: center;">
-    <h2 style="font-size: 2em; color: #2a2a2a;">🧠 Mentora</h2>
-    <p style="max-width: 700px; margin: 20px auto; font-size: 1.1em; color: #444;">
-        <strong>Mentora</strong> is an open-source, AI-powered learning platform I'm developing for students aged 10–18.
-        It provides curriculum-aligned content, guided prompts, and smart recommendations powered by large language models.
-    </p>
-    <p style="margin-top: 20px;">
-        🔗 <a href="https://github.com/OlgaDukic/mentora-core" target="_blank">View on GitHub</a><br>
-        🌍 <a href="https://mentora.rs" target="_blank">Visit mentora.rs</a>
-    </p>
-</section>
+  <section id="o-meni" class="section about">
+    <div><p class="kicker">O MENI</p><h2>Od učionice do sistema koji menjaju način na koji učimo.</h2></div>
+    <div class="about-copy">
+      <p>Moj profesionalni put spaja tehničke nauke, fiziku, informatiku i dugogodišnji rad sa učenicima i nastavnicima. Posebno me zanima kako veštačka inteligencija i analitika učenja mogu da podrže čoveka — bez gubitka odgovornosti, kritičkog mišljenja i smisla obrazovanja.</p>
+      <p>Osnivačica sam obrazovnog sistema Prizma i udruženja „Prizma – nauka i inovacije“. Razvijam programe, digitalna rešenja i projektna partnerstva koja mladima otvaraju više puteva ka znanju.</p>
+      <div class="stats"><div><strong>25+</strong><span>godina u obrazovanju</span></div><div><strong>2</strong><span>obrazovna centra</span></div><div><strong>AI + EDU</strong><span>fokus istraživanja</span></div></div>
+    </div>
+  </section>
 
+  <section id="projekti" class="section projects-section">
+    <div class="section-heading"><div><p class="kicker">OD IDEJE DO PRIMENE</p><h2>Izdvojeni projekti i inicijative</h2></div><p>Radim na mestima gde se susreću obrazovne potrebe, istraživanje i tehnologija koja može da donese merljivu vrednost.</p></div>
+    <div class="project-grid">
+      <article class="project-card"><div class="card-top"><span>OBRAZOVNI SISTEM</span><b>01</b></div><h3>Prizma</h3><p>Mreža programa za podršku učenju, razvoj digitalnih veština i rad sa decom i mladima u Čačku i Gornjem Milanovcu.</p><a href="https://www.prizmaskola.rs" target="_blank" rel="noreferrer">Posetite Prizmu <span>↗</span></a></article>
+      <article class="project-card"><div class="card-top"><span>AI U OBRAZOVANJU</span><b>02</b></div><h3>Mentora</h3><p>Istraživačko-razvojna platforma za učenje uz podršku AI, sa fokusom na preporuke, vođeno učenje i podršku kreatorima sadržaja.</p><a href="https://mentora.rs" target="_blank" rel="noreferrer">Saznajte više <span>↗</span></a></article>
+      <article class="project-card"><div class="card-top"><span>NAUKA I ODRŽIVOST</span><b>03</b></div><h3>Prizma – nauka i inovacije</h3><p>Udruženje koje razvija projekte popularizacije nauke, održivosti i inovacija kroz radionice, eksperimente i lokalna partnerstva.</p><a href="https://www.prizmaskola.rs/prizma_nauka_i_inovacije/" target="_blank" rel="noreferrer">Pogledajte aktivnosti <span>↗</span></a></article>
+      <article class="project-card"><div class="card-top"><span>RAZGOVORNI SISTEM</span><b>04</b></div><h3>Pitaj Prizmu</h3><p>Digitalni savetodavni asistent koji roditeljima pomaže da pronađu odgovarajući obrazovni put, uz odgovorno prikupljanje i obradu upita.</p><a href="https://www.prizmaskola.rs" target="_blank" rel="noreferrer">Isprobajte na sajtu <span>↗</span></a></article>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-light py-4">
-  <div class="container text-center">
-    <p class="mb-0">&copy; 2025 Olga Dukić. Sva prava zadržana.</p>
-  </div>
-</footer>
+  <section id="istrazivanja" class="section research">
+    <div class="research-intro"><p class="kicker">ISTRAŽIVANJE I PUBLIKACIJE</p><h2>AI koji služi učenju — i testiranje koje mu možemo verovati.</h2><p>Na doktorskim studijama informacionih tehnologija istražujem inteligentne obrazovne sisteme, preporučivačke modele i pouzdanost obrazovnih chatbotova. Rad povezujem sa stvarnim nastavnim situacijama i potrebama učenika i nastavnika.</p><div class="topics"><span>Inteligentni obrazovni sistemi</span><span>Learning analytics</span><span>AI u obrazovanju</span><span>Testiranje chatbotova</span></div></div>
+    <div class="paper-list"><article><span>2026</span><div><h3>Robustness Testing of Educational Chatbots</h3><p>Bihevioralni scenariji i metamorfne relacije</p></div></article><article><span>2025</span><div><h3>Mentora ChatBot as an Intelligent Recommender System</h3><p>Personalizovana podrška učenju</p></div></article><article><span>2025</span><div><h3>Teacher Logs &amp; Recommendation Module</h3><p>Analitika učenja u službi kreatora sadržaja</p></div></article></div>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="saradnja" class="section collaboration">
+    <div><p class="kicker">SARADNJA</p><h2>Otvorena sam za projekte koji imaju jasnu obrazovnu i društvenu vrednost.</h2><p>Saradnju gradim sa školama, fakultetima, istraživačima, organizacijama civilnog društva i međunarodnim partnerima.</p></div>
+    <ol><li><span>01</span>Razvoj i evaluacija obrazovnih projekata</li><li><span>02</span>AI i digitalne inovacije u nastavi</li><li><span>03</span>Istraživanja, publikacije i konferencije</li><li><span>04</span>Radionice, mentorstvo i pilot-programi</li></ol>
+  </section>
+
+  <section id="kontakt" class="contact"><p class="kicker">CONTACT / KONTAKT</p><h2>Imate ideju za zajednički projekat?</h2><p>Napišite mi ukratko šta želite da razvijemo i gde vidite prostor za moj doprinos.</p><a class="button light" href="mailto:dukicolga678@gmail.com">Pošaljite poruku ↗</a><div class="socials"><a href="https://github.com/OlgaDukic" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.prizmaskola.rs" target="_blank" rel="noreferrer">Prizma</a><a href="https://mentora.rs" target="_blank" rel="noreferrer">Mentora</a></div></section>
+  <footer><a class="wordmark" href="#top">OLGA <span>DUKIĆ</span></a><p>Obrazovanje · Istraživanje · Inovacije</p><span>© 2026</span></footer>
+  <script src="site.js"></script>
 </body>
 </html>

@@ -1,87 +1,21 @@
-/* Tamna tema za sajt Milene Dukić */
+:root { --ink:#152c2c; --paper:#f4f0e8; --cream:#e9e1d4; --rust:#ba573e; --sage:#a8b4a5; --line:rgba(21,44,44,.18); }
+*{box-sizing:border-box} html{scroll-behavior:smooth;overflow-x:hidden} body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden} a{color:inherit;text-decoration:none} button{font:inherit}
+.nav-shell{height:84px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:absolute;z-index:20;width:100%;color:var(--paper)}
+.wordmark{font-size:20px;letter-spacing:.05em;font-weight:300}.wordmark span{font-weight:800}.nav-links{display:flex;align-items:center;gap:34px;font-size:13px;letter-spacing:.08em}.nav-links a{opacity:.78;transition:.2s}.nav-links a:hover{opacity:1}.language{height:38px;width:42px;border:1px solid rgba(255,255,255,.35);background:transparent;color:inherit;cursor:pointer}.menu-button{display:none;background:none;border:0;color:inherit;font-size:26px}
+.hero{min-height:780px;background:var(--ink);color:var(--paper);display:grid;grid-template-columns:56% 44%;padding:150px 6vw 70px;overflow:hidden}.hero-copy{display:flex;flex-direction:column;justify-content:center;padding-right:6vw}.kicker{font-size:11px;font-weight:700;letter-spacing:.24em;margin:0 0 25px;color:var(--rust)}.hero .kicker{color:#d98a72}.hero h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(52px,6vw,92px);line-height:.98;letter-spacing:-.05em;margin:0}.hero h1 em{font-weight:400;color:#d3c4af}.hero-intro{font-family:Georgia,serif;font-size:19px;line-height:1.65;max-width:640px;color:#c5ceca;margin:36px 0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.primary{background:var(--rust);color:#fff}.ghost{border:1px solid rgba(255,255,255,.35)}.role{border-top:1px solid rgba(255,255,255,.15);margin:55px 0 0;padding-top:22px;font-size:11px;letter-spacing:.11em;color:#93a6a3;max-width:680px}.portrait-wrap{position:relative;display:flex;align-items:center}.portrait-frame{height:560px;width:100%;max-width:510px;position:relative}.portrait-frame:before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid rgba(233,225,212,.28)}.portrait-frame img{height:100%;width:100%;object-fit:cover;object-position:center 20%;filter:saturate(.78) contrast(1.03)}.vertical-note{writing-mode:vertical-rl;font-size:9px;letter-spacing:.28em;margin-left:24px;color:#77908c}
+.section{padding:110px 8vw}.section h2{font:400 clamp(38px,4.5vw,64px)/1.08 Georgia,serif;letter-spacing:-.035em;margin:0}.about{display:grid;grid-template-columns:46% 54%;gap:8vw}.about-copy{font-family:Georgia,serif;font-size:18px;line-height:1.75;color:#465b59}.about-copy>p:first-child{margin-top:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid var(--line);padding-top:32px;margin-top:38px}.stats strong{font:400 30px Georgia,serif;color:var(--rust);display:block}.stats span{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.projects-section{background:var(--cream)}.section-heading{display:grid;grid-template-columns:2fr 1fr;align-items:end;gap:8vw;margin-bottom:60px}.section-heading>p{line-height:1.7;color:#5e6e6b;margin:0}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.project-card{padding:42px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:350px;display:flex;flex-direction:column;transition:.25s}.project-card:hover{background:rgba(255,255,255,.35);transform:translateY(-3px)}.card-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.18em;color:var(--rust)}.card-top b{font:400 22px Georgia,serif;color:#9b9a91}.project-card h3{font:400 36px Georgia,serif;margin:50px 0 18px}.project-card p{line-height:1.7;color:#5c6e6a;max-width:520px}.project-card>a{margin-top:auto;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.project-card>a span{color:var(--rust);font-size:17px;margin-left:5px}
+.research{background:#f8f5ef;display:grid;grid-template-columns:45% 55%;gap:9vw}.research-intro>p:not(.kicker){font-family:Georgia,serif;font-size:17px;line-height:1.75;color:#536462;margin:30px 0}.topics{display:flex;flex-wrap:wrap;gap:8px}.topics span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);padding:10px 12px}.paper-list{border-top:1px solid var(--line)}.paper-list article{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:29px 0;border-bottom:1px solid var(--line)}.paper-list>article>span{color:var(--rust);font-size:12px;letter-spacing:.12em}.paper-list h3{font:400 20px/1.3 Georgia,serif;margin:0 0 8px}.paper-list p{margin:0;color:#6a7976;font-size:13px}
+.collaboration{background:var(--sage);display:grid;grid-template-columns:1.1fr .9fr;gap:9vw}.collaboration>div>p:last-child{line-height:1.7;max-width:570px}.collaboration ol{list-style:none;margin:0;padding:0;border-top:1px solid rgba(21,44,44,.24)}.collaboration li{border-bottom:1px solid rgba(21,44,44,.24);padding:23px 0;font:400 18px Georgia,serif}.collaboration li span{font:700 9px Arial,sans-serif;letter-spacing:.1em;color:var(--rust);margin-right:24px}
+.contact{background:var(--rust);color:#fff;padding:100px 8vw;text-align:center}.contact .kicker{color:#ffd9cd}.contact h2{font:400 clamp(42px,5vw,68px) Georgia,serif;margin:0 auto;max-width:800px}.contact>p:not(.kicker){font-family:Georgia,serif;font-size:18px;opacity:.8;margin:25px auto 35px;max-width:650px}.light{background:#fff;color:var(--rust)}.socials{display:flex;justify-content:center;gap:35px;margin-top:55px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.socials a{border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:5px}
+footer{background:#102424;color:#b8c2bf;min-height:110px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.09em}footer .wordmark{color:#fff;font-size:16px}
+@media(max-width:900px){.nav-shell{position:absolute}.menu-button{display:block}.nav-links{display:none;position:absolute;left:0;right:0;top:84px;background:#102424;padding:25px 6vw;flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.hero{grid-template-columns:1fr;padding-top:135px}.hero-copy{padding:0}.portrait-wrap{margin-top:70px}.portrait-frame{height:480px;max-width:none}.vertical-note{display:none}.about,.research,.collaboration{grid-template-columns:1fr}.section-heading{grid-template-columns:1fr}.about{gap:50px}.research{gap:60px}}
+@media(max-width:600px){.hero{padding-left:6vw;padding-right:6vw;min-height:auto}.hero h1{font-size:47px}.portrait-frame{height:390px}.section{padding:80px 6vw}.section h2{font-size:39px}.stats{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr}.project-card{padding:30px;min-height:320px}.project-card h3{margin-top:38px}.research{gap:50px}.paper-list article{grid-template-columns:55px 1fr}.socials{gap:18px;flex-wrap:wrap}footer{padding:35px 6vw;gap:20px;flex-direction:column;align-items:flex-start}}
 
-body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Navigacija */
-.navbar {
-    background-color: #1f1f1f;
-}
-
-.navbar .nav-link {
-    color: #e0e0e0;
-}
-
-.navbar .nav-link:hover {
-    color: #0d6efd;
-}
-
-.navbar .dropdown-menu {
-    background-color: #1f1f1f;
-    border: none;
-}
-
-.navbar .dropdown-item {
-    color: #e0e0e0;
-}
-
-.navbar .dropdown-item:hover {
-    background-color: #0d6efd;
-    color: #fff;
-}
-
-/* Hero sekcija */
-header {
-    background-color: #1a1a1a;
-    color: #f8f9fa;
-}
-
-/* Sekcije */
-section {
-    background-color: #1e1e1e;
-    color: #e2e6ea;
-}
-
-/* Footer */
-footer {
-    background-color: #111111;
-    color: #adb5bd;
-}
-
-/* Dugmad */
-.btn-primary {
-    background-color: #0d6efd;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #0b5ed7;
-}
-
-.btn-outline-primary {
-    border-color: #0d6efd;
-    color: #0d6efd;
-}
-
-.btn-outline-primary:hover {
-    background-color: #0d6efd;
-    color: #fff;
-}
-
-/* Slike u sekcijama */
-.img-fluid {
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Linkovi u tekstu */
-a {
-    color: #0d6efd;
-}
-
-a:hover {
-    color: #66b2ff;
-}
+/* Circular professional portrait */
+.portrait-frame{height:auto;aspect-ratio:1;max-width:520px}
+.portrait-frame:before{inset:-18px;border-radius:50%}
+.portrait-frame img{object-position:center;border-radius:50%;filter:saturate(.88) contrast(1.02)}
+.vertical-note{margin-left:32px}
+@media(max-width:900px){.portrait-frame{height:auto;max-width:520px}}
+@media(max-width:600px){.portrait-frame{height:auto;max-width:390px}}
